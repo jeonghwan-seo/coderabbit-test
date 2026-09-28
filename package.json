@@ -1,0 +1,10 @@
+{
+  "name": "code-review-practice",
+  "version": "1.0.0",
+  "description": "Sample project for practicing code review",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "license": "MIT"
+}
