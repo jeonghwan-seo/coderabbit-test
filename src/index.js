@@ -1,3 +1,3 @@
-const { sum, average, unique } = require('./utils');
+const { sum, average, unique, paginate } = require('./utils');
 
-module.exports = { sum, average, unique };
+module.exports = { sum, average, unique, paginate };
