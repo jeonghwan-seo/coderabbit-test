@@ -17,4 +17,8 @@ function paginate(items, pageSize, pageNumber) {
   return items.slice(start, end);
 }
 
-module.exports = { sum, average, unique, paginate };
+function sortByField(items, field) {
+  return items.sort((a, b) => (a[field] > b[field] ? 1 : -1));
+}
+
+module.exports = { sum, average, unique, paginate, sortByField };
