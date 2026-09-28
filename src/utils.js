@@ -11,4 +11,14 @@ function unique(items) {
   return [...new Set(items)];
 }
 
-module.exports = { sum, average, unique };
+function paginate(items, pageSize, pageNumber) {
+  const start = pageNumber * pageSize;
+  const end = start + pageSize;
+  return items.slice(start, end);
+}
+
+function sortByField(items, field) {
+  return items.sort((a, b) => (a[field] > b[field] ? 1 : -1));
+}
+
+module.exports = { sum, average, unique, paginate, sortByField };
